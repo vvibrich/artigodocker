@@ -29,7 +29,7 @@ VALUES
 	(1,'Primeiro docker-compose','Lorem ipsum dolor sit amet, consectetur adipiscing elit. '),
 	
 
-/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+/*!40000 ALTER TABLE `hello` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
