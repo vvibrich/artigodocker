@@ -22,7 +22,7 @@ CREATE TABLE `hello` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `hello` WRITE;
-/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `hello` DISABLE KEYS */;
 
 INSERT INTO `hello` (`id`, `title`, `body`)
 VALUES
