@@ -26,7 +26,7 @@ LOCK TABLES `hello` WRITE;
 
 INSERT INTO `hello` (`id`, `title`, `body`)
 VALUES
-	(1,'Primeiro docker-compose','Lorem ipsum dolor sit amet, consectetur adipiscing elit. '),
+	(1,'Primeiro docker-compose','Lorem ipsum dolor sit amet, consectetur adipiscing elit. ');
 	
 
 /*!40000 ALTER TABLE `hello` ENABLE KEYS */;
