@@ -4,7 +4,7 @@ $dbuser = $_ENV['MYSQL_USER'];
 $dbpass = $_ENV['MYSQL_PASS'];
 
 try {
-    $pdo = new PDO("mysql:host=mysql;dbname=blog", $dbuser, $dbpass);
+    $pdo = new PDO("mysql:host=mysql;dbname=compose", $dbuser, $dbpass);
     $statement = $pdo->prepare("SELECT * FROM hello");
     $statement->execute();
     $posts = $statement->fetchAll(PDO::FETCH_OBJ);
