@@ -6,30 +6,31 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-CREATE DATABASE `compose`;
-USE `compose`;
+CREATE DATABASE `blog`;
+USE `blog`;
 
-# Dump of table hello
+# Dump of table posts
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `hello`;
+DROP TABLE IF EXISTS `posts`;
 
-CREATE TABLE `hello` (
+CREATE TABLE `posts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(200) NOT NULL DEFAULT '',
   `body` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `hello` WRITE;
-/*!40000 ALTER TABLE `hello` DISABLE KEYS */;
+LOCK TABLES `posts` WRITE;
+/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
 
-INSERT INTO `hello` (`id`, `title`, `body`)
+INSERT INTO `posts` (`id`, `title`, `body`)
 VALUES
-	(1,'Primeiro docker-compose','Lorem ipsum dolor sit amet, consectetur adipiscing elit. ');
-	
+        (1,'Primeiro Post','Conteúdo do primeiro post'),
+        (2,'Segundo Post','Conteúdo do segundo post'),
+        (3,'Terceiro Post','Conteúdo do terceiro post');
 
-/*!40000 ALTER TABLE `hello` ENABLE KEYS */;
+/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
